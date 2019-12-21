@@ -1,0 +1,57 @@
+First-name: ΤΙΝΑ  21/11
+
+----
+
+Last-name: ΣΑΡΡΑ
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: ΑΘΗΝΑ
+
+----
+
+Phone: ewrw
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 1
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: erwr1
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-21 16:15
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

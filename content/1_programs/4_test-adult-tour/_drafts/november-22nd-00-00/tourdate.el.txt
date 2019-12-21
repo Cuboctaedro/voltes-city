@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2019-11-29
+
+----
+
+Time: 20:00
+
+----
+
+Seats: 18
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

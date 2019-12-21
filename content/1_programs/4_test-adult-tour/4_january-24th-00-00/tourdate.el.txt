@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2020-01-24
+
+----
+
+Time: 19:30
+
+----
+
+Seats: 12
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

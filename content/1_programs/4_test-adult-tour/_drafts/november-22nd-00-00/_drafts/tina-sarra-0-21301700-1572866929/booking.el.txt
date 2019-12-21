@@ -1,0 +1,55 @@
+First-name: ΤΙΝΑ
+
+----
+
+Last-name: ΣΑΡΡΑ
+
+----
+
+Address: ΞΣΦΚΣΔΞΦΛΣΚ 14
+
+----
+
+City: 
+
+Γλυφάδα
+
+----
+
+Phone: 6988556633
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Adult-number: 4
+
+----
+
+Children-names: 
+
+----
+
+Client-message: mpla mpla
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-04 13:25
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

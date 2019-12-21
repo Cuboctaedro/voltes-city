@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2019-12-18
+
+----
+
+Time: 16:00
+
+----
+
+Seats: 10
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

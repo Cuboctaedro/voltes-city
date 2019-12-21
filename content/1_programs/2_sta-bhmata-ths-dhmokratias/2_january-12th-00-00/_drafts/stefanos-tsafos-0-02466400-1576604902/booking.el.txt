@@ -1,0 +1,59 @@
+First-name: Stefanos
+
+----
+
+Last-name: Tsafos
+
+----
+
+Address: Ψηλορείτη 97
+
+----
+
+City: 
+
+Γλυφάδα
+
+----
+
+Phone: 6974714121
+
+----
+
+Email: mariapapado@gmail.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 4
+
+----
+
+Children-names: nikos
+
+----
+
+Client-message: lol
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-12-17 19:45
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

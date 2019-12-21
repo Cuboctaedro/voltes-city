@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2020-01-03
+
+----
+
+Time: 19:30
+
+----
+
+Seats: 16
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

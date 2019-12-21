@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2020-01-17
+
+----
+
+Time: 19:30
+
+----
+
+Seats: 10
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

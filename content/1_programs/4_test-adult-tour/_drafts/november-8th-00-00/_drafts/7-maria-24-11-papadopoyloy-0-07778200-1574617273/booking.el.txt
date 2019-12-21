@@ -1,0 +1,57 @@
+First-name: 7 maria 24/11
+
+----
+
+Last-name: ΠΑΠΑΔΟΠΟΥΛΟΥ
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: ΑΘΗΝΑ
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@gmail.com
+
+----
+
+Teen-number: 1
+
+----
+
+Adult-number: 4
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-24 19:40
+
+----
+
+Children-names: 
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

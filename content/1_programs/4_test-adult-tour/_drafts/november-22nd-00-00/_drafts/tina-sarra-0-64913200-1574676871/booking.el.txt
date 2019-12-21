@@ -1,0 +1,57 @@
+First-name: ΤΙΝΑ
+
+----
+
+Last-name: ΣΑΡΡΑ
+
+----
+
+Address: Γρ. Λαμπράκη 106-108
+
+----
+
+City: Πειραιάς
+
+----
+
+Phone: 6940710560
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Teen-number: 1
+
+----
+
+Adult-number: 1
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-25 12:10
+
+----
+
+Children-names: 
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

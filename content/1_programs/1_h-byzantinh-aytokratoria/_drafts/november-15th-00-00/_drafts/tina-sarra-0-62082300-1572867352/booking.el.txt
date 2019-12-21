@@ -1,0 +1,59 @@
+First-name: ΤΙΝΑ
+
+----
+
+Last-name: ΣΑΡΡΑ
+
+----
+
+Address: Ψηλορείτη 97
+
+----
+
+City: 
+
+Γλυφάδα
+
+----
+
+Phone: 6937437535
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 3
+
+----
+
+Adult-number: 4
+
+----
+
+Children-names: fdfdf 4, fdfds 8, sdfsd 9
+
+----
+
+Client-message: sxolia
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-04 13:35
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

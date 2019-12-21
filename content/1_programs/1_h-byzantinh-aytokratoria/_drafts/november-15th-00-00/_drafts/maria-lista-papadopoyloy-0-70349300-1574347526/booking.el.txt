@@ -1,0 +1,57 @@
+First-name: ΜΑΡΙΑ  λιστα
+
+----
+
+Last-name: ΠΑΠΑΔΟΠΟΥΛΟΥ
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: ΑΘΗΝΑ
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@gmail.com
+
+----
+
+Children-number: 1
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: δσδγσ
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-21 16:45
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

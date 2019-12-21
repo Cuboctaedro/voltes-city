@@ -1,0 +1,57 @@
+First-name: Dimitrios
+
+----
+
+Last-name: Kottas
+
+----
+
+Address: Asklipiou 12
+
+----
+
+City: Athens
+
+----
+
+Phone: 6932001313
+
+----
+
+Email: info@cuboctaedro.eu
+
+----
+
+Children-number: 0
+
+----
+
+Adult-number: 2
+
+----
+
+Client-message: σαγξ
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-30 12:10
+
+----
+
+Children-names: 
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

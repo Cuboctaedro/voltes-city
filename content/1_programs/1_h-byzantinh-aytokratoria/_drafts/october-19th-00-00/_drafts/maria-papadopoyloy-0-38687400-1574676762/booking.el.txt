@@ -1,0 +1,53 @@
+First-name: ΜΑΡΙΑ
+
+----
+
+Last-name: ΠΑΠΑΔΟΠΟΥΛΟΥ
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: athens
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Adult-number: 1
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-11-25 12:10
+
+----
+
+Children-names: 
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

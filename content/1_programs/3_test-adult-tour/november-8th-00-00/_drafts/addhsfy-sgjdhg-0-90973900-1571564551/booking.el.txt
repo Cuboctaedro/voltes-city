@@ -1,0 +1,53 @@
+First-name: addhsfy
+
+----
+
+Last-name: sgjdhg
+
+----
+
+Address: xhdj
+
+----
+
+City: sdfh
+
+----
+
+Phone: dghk
+
+----
+
+Email: dkottas@gmx.net
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: 
+
+----
+
+Client-message: etykj
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2019-10-20 09:40
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

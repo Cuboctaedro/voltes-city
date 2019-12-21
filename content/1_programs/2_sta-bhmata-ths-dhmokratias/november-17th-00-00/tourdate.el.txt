@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Template: tourdate
+
+----
+
+Date: 2019-11-17
+
+----
+
+Time: 12:00
+
+----
+
+Seats: 18
+
+----
+
+Cancelled: false

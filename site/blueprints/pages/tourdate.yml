@@ -1,0 +1,86 @@
+title: Tour Date
+
+sections:
+    content:
+        type: fields
+        fields:
+            date:
+                label: Ημερομηνία
+                type: date
+                width: 1/2
+            time:
+                label: Ωρα
+                type: time
+                width: 1/2
+            seats:
+                label: Αριθμός ατόμων
+                type: number
+                default: 18
+                width: 1/2
+            cancelled:
+                label: Ακύρωση Ξενάγησης
+                type: toggle
+                width: 1/2
+                default: false
+                text:
+                  - Οχι
+                  - Ναι
+    bookings:
+        type: pagetable
+        headline: Κρατήσεις
+        status: all
+        templates: booking
+        columns:
+            name:
+                label: Ονομα
+                text: '{{ page.first_name }} {{ page.last_name }}'
+                type: text
+                sortable: true
+                searchable: true
+            email:
+                label: Email
+                text: '{{ page.email }}'
+                type: text
+                sortable: true
+                searchable: true
+            phone:
+                label: Τηλέφωνο
+                text: '{{ page.phone }}'
+                type: text
+                sortable: true
+                searchable: true
+            children:
+                label: Αρ. Παιδιών
+                text: '{{ page.children_number }}'
+                type: number
+                sortable: true
+            teen:
+                label: Αρ. Εφήβων
+                text: '{{ page.teen_number }}'
+                type: number
+                sortable: true
+            adults:
+                label: Αρ. Ενηλίκων
+                text: '{{ page.adult_number }}'
+                type: number
+                sortable: true
+            situation:
+                label: Status
+                text: '{{ page.bookingStatus }}'
+                type: text
+                sortable: true
+            type:
+                label: Booked
+                text: '{{ page.booking_type }}' 
+                type: text
+                sortable: true
+
+addFields:
+    date:
+        label: Ημερομηνία
+        type: date
+        required: true
+    time:
+        label: Ωρα
+        type: time
+        required: true
