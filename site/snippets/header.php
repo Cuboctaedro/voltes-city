@@ -28,7 +28,7 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=Gvbb507pA5">
     <meta name="theme-color" content="#ffffff">
-    <?php if ( 'prod' == env('ENVIRONMENT') ) : ?>
+    <?php if ( 'prod' == option('voltes.env') ) : ?>
 
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -36,6 +36,12 @@
             <script>
             function onSubmit(token) {
                 document.getElementById("contactform").submit();
+            }
+            </script>
+        <?php elseif ($page->intendedTemplate() == 'bookingform') : ?>
+            <script>
+            function onSubmit(token) {
+                document.getElementById("bookingform").submit();
             }
             </script>
         <?php else: ?>

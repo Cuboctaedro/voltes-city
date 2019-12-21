@@ -308,7 +308,9 @@
         <input
             type="submit"
             value="Υποβολή"
-            class="font-titles text-sm uppercase tracking-wider px-6 py-2 bg-brand-500 text-white hover:bg-brand-600 shadow-lg hover:shadow-xl cursor-pointer rounded"
+            class="g-recaptcha font-titles text-sm uppercase tracking-wider px-6 py-2 bg-brand-500 text-white hover:bg-brand-600 shadow-lg hover:shadow-xl cursor-pointer rounded"
+            data-sitekey="<?= option('voltes.recaptcha'); ?>" 
+            data-callback='onSubmit'
         >
     </div>
 </form>

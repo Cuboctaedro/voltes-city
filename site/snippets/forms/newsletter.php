@@ -22,7 +22,7 @@
             type="submit"
             value="Υποβολή"
             class="g-recaptcha button button_border inline-block cursor-pointer"
-            data-sitekey="<?= env('RECAPTCHA_PUBLIC'); ?>" 
+            data-sitekey="<?= option('voltes.recaptcha'); ?>" 
             data-callback='onSubmit'
         >
     </div>

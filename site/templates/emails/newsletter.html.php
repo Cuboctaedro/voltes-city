@@ -9,7 +9,7 @@
 
 <h1>Νέα Συνδρομή:</h1>
 
-<p>Email: <?= $data['email']; ?></p>
+<p>Email: <?= $data['newsletter_email']; ?></p>
 
 
 </body>

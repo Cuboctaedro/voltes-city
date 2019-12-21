@@ -56,7 +56,7 @@ class MailBookingAction extends Action {
         try {
             $kirby->email( [
                 'to'       => $receiver,
-                'from'     => env('EMAIL_SENDER'),
+                'from'     => option('voltes.emailsender'),
                 'subject'  => 'Η κράτηση σας στο Βόλτες στην Πόλη',
                 'template' => 'toclient',
                 'data'     => [
@@ -77,9 +77,9 @@ class MailToTinaAction extends Action {
         $page = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $this->form->data('tourdate'));
 
         if ($page->parent()->tourtype() == 'adults') {
-            $receiver = env('EMAIL_RECEIVER_ADULT');
+            $receiver = option('voltes.emailreceiveadults');
         } else {
-            $receiver = env('EMAIL_RECEIVER_KIDS');
+            $receiver = option('voltes.emailreceivekids');
         }
 
         $tourtitle = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->title();
@@ -90,7 +90,7 @@ class MailToTinaAction extends Action {
             $kirby->email( [
                 'subject'  => 'Booking: ' . $tourtitle . ' - ' . $tourdate . ' - ' . $this->form->data('last_name'),
                 'template' => 'totina',
-                'from'     => env('EMAIL_SENDER'),
+                'from'     => option('voltes.emailsender'),
                 'to'       => $receiver,
                 'data'     => [
                     'data' => $this->form->data(),
@@ -112,8 +112,8 @@ class MailContactAction extends Action {
         try {
             $kirby->email( [
                 'template' => 'contact',
-                'from'     => env('EMAIL_SENDER') ,
-                'to'       => env('EMAIL_RECEIVER'),
+                'from'     => option('voltes.emailsender'),
+                'to'       => option('voltes.emailreceive'),
                 'subject'  => 'Μηνυμα απο φόρμα επικοινωνίας',
                 'data'     => [
                     'data' => $this->form->data()
@@ -136,9 +136,9 @@ class MailSubscriptionAction extends Action {
         try {
             $kirby->email( [
                 'template' => 'newsletter',
-                'from'     => env('EMAIL_SENDER'),
+                'from'     => $kirby->option('voltes.emailsender'),
                 'subject'  => 'Εγγραφή στο newsletter',
-                'to'       => env('EMAIL_RECEIVER'),
+                'to'       => $kirby->option('voltes.emailreceive'),
                 'data'     => [
                     'data' => $this->form->data()
                  ]

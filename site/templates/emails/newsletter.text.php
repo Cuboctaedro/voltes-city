@@ -1,3 +1,3 @@
 Νέα Συνδρομή:
 
-Email: <?= $data['email']; ?>
+Email: <?= $data['newsletter_email']; ?>
