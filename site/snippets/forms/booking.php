@@ -12,9 +12,9 @@
                 <input
                     type="radio"
                     name="tourdate"
-                    value="<?= $tourdate->dirname() ?>"
+                    value="<?= $tourdate->dirname() ?>__<?= $tourdate->bookingStatus() ?>"
                     id="<?= $tourdate->dirname() ?>"
-                    <?php e($selected_date == $tourdate->dirname(), ' checked ', '') ?>
+                    <?php e($selected_date == $tourdate->dirname() . '__' . $tourdate->bookingStatus(), ' checked ', '') ?>
                     class="mr-3 block"
                 >
                 <span class=" ">

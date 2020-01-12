@@ -66,12 +66,12 @@ sections:
                 sortable: true
             situation:
                 label: Status
-                text: '{{ page.bookingStatus }}'
+                text: '{{ page.payment.value }}'
                 type: text
                 sortable: true
             type:
                 label: Booked
-                text: '{{ page.booking_type }}' 
+                text: '{{ page.booking_type.value }}' 
                 type: text
                 sortable: true
 

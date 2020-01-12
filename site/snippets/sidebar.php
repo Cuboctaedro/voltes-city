@@ -4,7 +4,7 @@
         $sidebarleft = $site->tourlistleft()->toPage();
         $sidebarright = $site->tourlistright()->toPage();
     } elseif ( 'program' == $page->intendedTemplate() ) {
-        if ( 'adult' == $page->programType()) {
+        if ( 'adults' == $page->programType()) {
             $sidebarleft = $site->toursingleadultleft()->toPage();
             $sidebarright = $site->toursingleadultright()->toPage();
    

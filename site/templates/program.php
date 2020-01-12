@@ -95,26 +95,27 @@
                         <?php snippet('icons/calendar'); ?>
                         <div class="pl-3 w-full">
                             <div class="label">Ημερομηνίες:</div>
-                            <?php foreach ($page->activeTours() as $tour) : ?>
+                            <?php foreach ($page->futureTours() as $tour) : ?>
 
-                                <?php if ($tour->statuscode() == 'green'): ?>
+                                <?php if ($tour->acceptsRegistrations() && $tour->statuscode() == 'green'): ?>
                                     <div class="text-gray-800 flex flex-row flex-wrap items-center justify-between w-full pb-2">
                                         <span class="pr-2"><?= $tour->midDate(); ?></span>
                                         <a class="button button_border" href="<?= url($page->url() . '/bookingform' , ['params' => ['date' => $tour->dirname()]]) ?>" title="Κάντε κράτηση">Κάντε κράτηση</a>
                                     </div>
-                                <?php elseif ($tour->statuscode() == 'yellow'): ?>
+                                <?php elseif ($tour->acceptsRegistrations() && $tour->statuscode() == 'yellow'): ?>
                                     <div class="text-gray-800 flex flex-row flex-wrap items-center justify-between w-full pb-2">
                                         <span class="pr-2"><?= $tour->midDate(); ?></span>
                                         <a class="button button_border" href="<?= url($page->url() . '/bookingform' , ['params' => ['date' => $tour->dirname()]]) ?>" title="Κάντε κράτηση">Κάντε κράτηση</a>
                                     </div>
-                                <?php elseif ($tour->statuscode() == 'red'): ?>
+                                <?php elseif ($tour->acceptsRegistrations() && $tour->statuscode() == 'red'): ?>
                                     <div class="text-gray-800 flex flex-row flex-wrap items-center justify-between w-full pb-2">
                                         <span class="pr-2"><?= $tour->midDate(); ?></span>
                                         <a class="button button_border_danger" href="<?= url($page->url() . '/bookingform' , ['params' => ['date' => $tour->dirname()]]) ?>" title="Κάντε κράτηση">Λίστα αναμονής</a>
                                     </div>
-                                <?php else: ?>
+                                <?php elseif ( $tour->isCancelled()): ?>
                                     <div class="text-gray-800 flex flex-row flex-wrap items-center justify-between w-full pb-2">
                                         <span class="pr-2"><?= $tour->midDate(); ?></span>
+                                        <span>Ακυρώθηκε</span>
                                     </div>
                                 <?php endif; ?>
 

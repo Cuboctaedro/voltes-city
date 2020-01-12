@@ -2,7 +2,7 @@
 
 if($page->parent()->programType() == 'children') {
 
-    if ( $page->parent()->status() == 'full' ) {
+    if ( $status == 'waiting' ) {
         echo site()->childrenwaitingstart();
     } else {
         echo site()->childrenbookingstart();
@@ -10,7 +10,7 @@ if($page->parent()->programType() == 'children') {
 
 } else {
 
-    if ( $page->parent()->status() == 'full' ) {
+    if ( $status == 'waiting' ) {
         echo site()->adultwaitingstart();
     } else {
         echo site()->adultbookingstart();
@@ -76,7 +76,7 @@ Email:
 
 if($page->parent()->programType() == 'children') {
 
-    if ( $page->parent()->status() == 'full' ) {
+    if ( $status == 'waiting' ) {
         echo site()->childrenwaitingend();
     } else {
         echo site()->childrenbookingend();
@@ -84,7 +84,7 @@ if($page->parent()->programType() == 'children') {
 
 } else {
 
-    if ( $page->parent()->status() == 'full' ) {
+    if ( $status == 'waiting' ) {
         echo site()->adultwaitingend();
     } else {
         echo site()->adultbookingend();

@@ -49,7 +49,7 @@ class TourdatePage extends Page {
 
     public function isCancelled() {
 
-        if ($this->cancelled()->exists() && $this->cancelled() == 'True' ) {
+        if ($this->cancelled()->exists() && $this->cancelled()->toBool() ) {
             return true;
         }
     }
@@ -71,13 +71,13 @@ class TourdatePage extends Page {
 
         if ($this->parent()->programType() == 'children') {
 
-            if ( $this->childrenNumber() >= $this->allowedNumber() ) {
+            if ( $this->childrenNumber() > $this->allowedNumber() ) {
 
                 return true;
 
             }
 
-        } else if ( $this->adultsNumber() >= $this->allowedNumber() ) {
+        } else if ( $this->adultsNumber() > $this->allowedNumber() ) {
 
             return true;
 
@@ -165,6 +165,20 @@ class TourdatePage extends Page {
 
     }
 
+    public function bookingStatus() {
+
+        if ( $this->isFull() ) {
+
+            return "waiting";
+
+        } else {
+
+            return "booked";
+
+        }
+
+    }
+ 
     public function longDate() {
 
         $rawdate = $this->date()->toDate('U');

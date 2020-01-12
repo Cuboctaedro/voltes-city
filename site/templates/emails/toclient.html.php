@@ -352,13 +352,13 @@
                       <?php
                         if($page->parent()->programType() == 'children') {
 
-                            if ( $page->parent()->status() == 'full' ) {
+                            if ( $status == 'waiting' ) {
                                 echo site()->childrenwaitingstart()->kt();
                             } else {
                                 echo site()->childrenbookingstart()->kt();
                             }
                         } else {
-                            if ( $page->parent()->status() == 'full' ) {
+                            if ( $status == 'waiting' ) {
                                 echo site()->adultwaitingstart()->kt();
                             } else {
                                 echo site()->adultbookingstart()->kt();
@@ -394,7 +394,7 @@
 
                               if($page->parent()->programType() == 'children') {
 
-                                  if ( $page->parent()->status() == 'full' ) {
+                                  if ( $status == 'waiting' ) {
                                       echo site()->childrenwaitingend()->kt();
                                   } else {
                                       echo site()->childrenbookingend()->kt();
@@ -402,7 +402,7 @@
 
                               } else {
 
-                                  if ( $page->parent()->status() == 'full' ) {
+                                  if ( $status == 'waiting' ) {
                                       echo site()->adultwaitingend()->kt();
                                   } else {
                                       echo site()->adultbookingend()->kt();

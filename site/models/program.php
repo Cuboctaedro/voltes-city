@@ -7,6 +7,12 @@ class ProgramPage extends Page {
 
     }
 
+    public function futureTours() {
+
+        return $this->children()->filterby('isFuture', true)->sortBy('date');
+
+    }
+    
     public function openTours() {
 
         return $this->activeTours()->filterBy('acceptsRegistrations', true);

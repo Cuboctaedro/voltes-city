@@ -350,6 +350,9 @@
                     <tr>
                       <td>
                         <h2 class="align-center">ΣΤΟΙΧΕΙΑ ΚΡΑΤΗΣΗΣ</h2>
+                        <?php if ( $status == 'waiting' ): ?>
+                        <h3 class="align-center">ΛΙΣΤΑ ΑΝΑΜΟΝΗΣ</h3>
+                        <?php endif; ?>
 
                         <p><span class="bold">Ξενάγηση:</span> <?= $page->parent()->title() ?></p>
                         <p><span class="bold">Ημερομηνία:</span> <?= $page->longDate() ?></p>

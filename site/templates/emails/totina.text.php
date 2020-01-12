@@ -1,4 +1,9 @@
 ΣΤΟΙΧΕΙΑ ΚΡΑΤΗΣΗΣ
+
+<?php if ( $status == 'waiting' ): ?>
+---
+ΛΙΣΤΑ ΑΝΑΜΟΝΗΣ
+<?php endif; ?>
 ---
 Ξενάγηση:
 <?= $page->parent()->title() ?>

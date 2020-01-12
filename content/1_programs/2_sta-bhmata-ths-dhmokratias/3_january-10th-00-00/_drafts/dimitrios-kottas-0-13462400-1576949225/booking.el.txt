@@ -22,7 +22,7 @@ Email: info@cuboctaedro.eu
 
 ----
 
-Children-number: 2
+Children-number: 1
 
 ----
 
@@ -30,19 +30,19 @@ Adult-number: 1
 
 ----
 
-Children-names: aeyhr
+Children-names: fgs
 
 ----
 
-Client-message: astj
+Client-message: adfh
 
 ----
 
-Booking-type: waiting
+Booking-type: booked
 
 ----
 
-Booking-time: 2019-12-21 14:20
+Booking-time: 2019-12-21 19:25
 
 ----
 

@@ -112,22 +112,42 @@ return function ($kirby, $pages, $page) {
     
     if ($kirby->request()->is('POST') && get('formtitle') == 'bookingform') {
     
-        $bookingform->honeypotGuard()
-        // ->sessionStoreAction(['name' => 'booking-form'])
-        ->saveBookingAction()
-        ->mailBookingAction()
-        ->mailToTinaAction()
-        ;
-        if ($bookingform->success()) {
-            $parent = kirby()->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $bookingform->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $bookingform->data('tourdate'));
-    
-            if( $parent->isFull() ) {
-                kirby()->session()->set('booking', 'waiting');
-            } else {
-                kirby()->session()->set('booking', 'ok');
-            }
+        $dateslug = explode('__', $bookingform->data('tourdate'))[0];
+        $bookingtype = explode('__', $bookingform->data('tourdate'))[1];
+
+        $parent = kirby()->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $bookingform->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug);
+        
+        if ( !$parent->acceptsRegistrations() ) {
+
+            $bookingstatus = 'error';
+            kirby()->session()->set('booking', $bookingstatus);
+
             go('success');
+
+        } else {
+            
+            if ( $parent->bookingStatus() == 'waiting' ) {
+                $bookingstatus = 'waiting';
+            } else {
+                $bookingstatus = $bookingtype;
+            }
+
+            $bookingform->honeypotGuard()
+            // ->sessionStoreAction(['name' => 'booking-form'])
+            ->saveBookingAction()
+            ->mailBookingAction()
+            ->mailToTinaAction()
+            ;
+            
+            if ($bookingform->success()) {
+                kirby()->session()->set('booking', $$bookingstatus);
+
+                go('success');
+            }
+            
         }
+
+
     
     }
     

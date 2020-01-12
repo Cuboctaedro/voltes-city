@@ -10,16 +10,14 @@ class SaveBookingAction extends Action
     {
         $kirby = kirby();
         $kirby->impersonate('kirby');
+        
+        $dateslug = explode('__', $this->form->data('tourdate'))[0];
+        $bookingtype = explode('__', $this->form->data('tourdate'))[1];
 
-        $parent = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $this->form->data('tourdate'));
+        $parent = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug);
 
         $slug = url_slug($this->form->data('first_name')) . '-' . url_slug($this->form->data('last_name')) . '-' . microtime();
 
-        if($parent->isFull() == true) {
-            $bookingtype = 'waiting';
-        } else {
-            $bookingtype = 'booked';
-        }
         try {
             $parent->createChild([
                 'slug'     => $slug,
@@ -52,6 +50,8 @@ class MailBookingAction extends Action {
     public function perform() {
         $kirby = kirby();
         $receiver = $this->form->data('email');
+        $dateslug = explode('__', $this->form->data('tourdate'))[0];
+        $bookingtype = explode('__', $this->form->data('tourdate'))[1];
 
         try {
             $kirby->email( [
@@ -61,7 +61,8 @@ class MailBookingAction extends Action {
                 'template' => 'toclient',
                 'data'     => [
                     'data' => $this->form->data(),
-                    'page' => $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $this->form->data('tourdate'))
+                    'page' => $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug),
+                    'status' => $bookingtype
                  ]
             ]);
         } catch (Exception $error) {
@@ -74,7 +75,10 @@ class MailToTinaAction extends Action {
 
     public function perform() {
         $kirby = kirby();
-        $page = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $this->form->data('tourdate'));
+        $dateslug = explode('__', $this->form->data('tourdate'))[0];
+        $bookingtype = explode('__', $this->form->data('tourdate'))[1];
+
+        $page = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug);
 
         if ($page->parent()->tourtype() == 'adults') {
             $receiver = option('voltes.emailreceiveadults');
@@ -84,7 +88,7 @@ class MailToTinaAction extends Action {
 
         $tourtitle = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->title();
 
-        $tourdate = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $this->form->data('tourdate'))->shortDate();
+        $tourdate = $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug)->shortDate();
 
         try {
             $kirby->email( [
@@ -94,7 +98,8 @@ class MailToTinaAction extends Action {
                 'to'       => $receiver,
                 'data'     => [
                     'data' => $this->form->data(),
-                    'page' => $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $this->form->data('tourdate'))
+                    'page' => $kirby->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $this->form->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug),
+                    'status' => $bookingtype
                  ]
             ]);
         } catch (Exception $error) {

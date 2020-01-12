@@ -11,7 +11,10 @@
 
         <div class="p-3 md:p-6 generated">
             <?php
-            if ($kirby->session()->get('booking') == 'waiting') {
+            if ( $kirby->session()->get('booking') == 'error' ) {
+                echo 'Η κράτηση σε αυτή την ξενάγηση δεν είναι δυνατή.';
+            }
+            elseif ($kirby->session()->get('booking') == 'waiting') {
                 echo $page->waiting()->kt();
             } else {
                 echo $page->body()->kt();

@@ -34,7 +34,7 @@
                 <section class="p-3 md:p-6 border-b border-solid border-gray-200">
                     <h2 class="heading-4 mb-2">Εισιτήριο Εισόδου</h2>
                     <div>
-                        <?= $page->parent()->ticket() ?> ευρώ
+                        <?= $page->parent()->entranceticket() ?> ευρώ
                     </div>
                     <div>
                         <?= $page->parent()->priceinfo()->kt() ?>
