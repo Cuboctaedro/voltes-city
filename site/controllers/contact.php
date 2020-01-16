@@ -9,6 +9,10 @@ return function ($kirby, $pages, $page) {
             'rules' => ['required'],
             'message' => 'Παρακαλώ συμπληρώστε το όνομα σας.',
         ],
+        'lastname' => [
+            'rules' => ['required'],
+            'message' => 'Παρακαλώ συμπληρώστε το επίθετο σας.',
+        ],
         'email' => [
             'rules' => ['required', 'email'],
             'message' => 'Παρακαλώ συμπληρώστε το email σας.',

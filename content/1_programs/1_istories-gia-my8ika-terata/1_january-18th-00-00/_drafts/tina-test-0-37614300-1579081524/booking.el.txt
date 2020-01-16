@@ -1,0 +1,60 @@
+First-name: Τινα
+
+----
+
+Last-name: Τεστ
+
+----
+
+Address: dfafadf
+
+----
+
+City: adfadfasdf
+
+----
+
+Phone: ακδφάκξφάξ
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 2
+
+----
+
+Adult-number: 2
+
+----
+
+Children-names: 
+
+dfaf 
+afadf
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2020-01-15 11:45
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

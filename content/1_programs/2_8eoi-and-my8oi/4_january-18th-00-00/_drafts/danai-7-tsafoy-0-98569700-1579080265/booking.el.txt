@@ -1,0 +1,57 @@
+First-name: ΔΑΝΑΗ 7
+
+----
+
+Last-name: ΤΣΑΦΟΥ
+
+----
+
+Address: ΖΩΖΨΖΧ
+
+----
+
+City: ΖΨΧΖΨ
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@yahoo.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 2
+
+----
+
+Children-names: ΧΨΩΧΨΩ
+
+----
+
+Client-message: ΧΨΩΧ
+
+----
+
+Booking-type: waiting
+
+----
+
+Booking-time: 2020-01-15 11:20
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2020-02-07
+
+----
+
+Time: 19:30
+
+----
+
+Seats: 37
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

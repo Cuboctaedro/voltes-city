@@ -17,6 +17,15 @@
 
     <div class="mb-6">
         <?php snippet('forms/fields/input', [
+            'field_name' => 'lastname',
+            'field_type' => 'text',
+            'form_name' => $contactform,
+            'field_label' => 'Επίθετο',
+        ]);?>
+    </div>
+
+    <div class="mb-6">
+        <?php snippet('forms/fields/input', [
             'field_name' => 'email',
             'field_type' => 'email',
             'form_name' => $contactform,

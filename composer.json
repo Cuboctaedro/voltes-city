@@ -26,7 +26,8 @@
         "mzur/kirby-uniform": "4.0",
         "k-community/markdown-field": "^1.0",
         "steirico/kirby-plugin-custom-add-fields": "^1.1",
-        "oblik/kirby-link-field": "^1.0"
+        "oblik/kirby-link-field": "^1.0",
+        "bnomei/kirby3-dotenv": "^1.2"
     },
     "config": {
         "optimize-autoloader": true

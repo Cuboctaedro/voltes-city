@@ -1,0 +1,57 @@
+First-name: ΔΑΝΑΗ 6
+
+----
+
+Last-name: ΤΣΑΦΟΥ
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: ΑΘΗΝΑ
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@yahoo.com
+
+----
+
+Children-number: 2
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: ΔΤΓΕΤΤΕ
+
+----
+
+Client-message: ΔΓΔΕΦ
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2020-01-15 11:15
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

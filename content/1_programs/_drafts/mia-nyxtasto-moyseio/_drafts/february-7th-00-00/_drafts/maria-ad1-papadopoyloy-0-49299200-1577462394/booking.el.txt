@@ -1,0 +1,57 @@
+First-name: ΜΑΡΙΑ  ad1
+
+----
+
+Last-name: ΠΑΠΑΔΟΠΟΥΛΟΥ
+
+----
+
+Address: Ψηλορείτη 97
+
+----
+
+City: athens
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@gmail.com
+
+----
+
+Adult-number: 1
+
+----
+
+Teen-number: 1
+
+----
+
+Children-names: 
+
+----
+
+Client-message: 
+
+----
+
+Notes: 
+
+----
+
+Booking-time: 2019-12-27 17:55
+
+----
+
+Booking-type: booked
+
+----
+
+Payment: true
+
+----
+
+Cancel: false

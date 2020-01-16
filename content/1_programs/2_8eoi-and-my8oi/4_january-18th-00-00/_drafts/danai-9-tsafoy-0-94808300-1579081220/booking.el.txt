@@ -1,0 +1,59 @@
+First-name: ΔΑΝΑΗ 9
+
+----
+
+Last-name: 
+
+Τσαφου
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: ΣΦΣΔ
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@yahoo.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 4
+
+----
+
+Children-names: ΚΝΞΚ
+
+----
+
+Client-message: ΞΗ
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2020-01-15 11:40
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

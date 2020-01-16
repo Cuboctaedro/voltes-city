@@ -210,18 +210,18 @@
             'field_name' => 'payment_method',
             'form_name' => $bookingform,
             'field_label' => 'Επιλέξτε τον τρόπο που επιθυμείτε να εξοφλήσετε',
-            'field_info' => 'Όταν ολοκληρώσετε την εξόφληση μας ενημερώνετε με ένα email.',
+            'field_info' => 'Περισσότερες πληροφορίες θα βρείτε στο email επιβεβαίωσης που θα λάβετε.',
             'options' => [
                 [
-                    'label' => 'Κατάθεση στην τράπεζα Πειραιώς (ΙΒΑΝ: GR52 0172 0260 0050 2608 3001 574, Δικαιούχος: ΚΥΡΙΑΚΑΤΙΚΕΣ ΒΟΛΤΕΣ ΣΤΗΝ ΠΟΛΗ ΑμΚΕ)',
+                    'label' => 'Κατάθεση στην τράπεζα Πειραιώς',
                     'val' => 'piraeus'
                 ],
                 [
-                    'label' => 'Paypal https://paypal.me/kyriakatikesvoltesgr',
+                    'label' => 'Paypal',
                     'val' => 'paypal'
                 ],
                 [
-                    'label' => 'Έμβασμα από άλλη τράπεζα (Προσοχή! σε αυτή την περίπτωση επιβαρύνεστε με τα έξοδα της τράπεζάς σας. Επιλογή OUR.)',
+                    'label' => 'Έμβασμα από άλλη τράπεζα',
                     'val' => 'otherbank'
                 ],
             ]
@@ -261,8 +261,13 @@
 
     <div class="mb-12">
         <?php
-        $termpage = $pages->find('oroi-symmetoxhs');
-        $temrinfo = '<a href="' . $termpage->url() . '" >Διαβάστε τους όρους συμμετοχής.</a>'
+        if($page->parent()->programType() == 'children') {
+            $termpage = $pages->find('pws-doyleyoyme');
+        } else {
+            $termpage = $pages->find('plhrofories-gia-enhlikes');
+        }
+        // $termpage = $pages->find('how-we-work');
+        $temrinfo = '<a href="' . $termpage->url() . '" target="_blank" >Διαβάστε τους όρους συμμετοχής.</a>'
 
         ?>
         <?php snippet('forms/fields/checkbox', [

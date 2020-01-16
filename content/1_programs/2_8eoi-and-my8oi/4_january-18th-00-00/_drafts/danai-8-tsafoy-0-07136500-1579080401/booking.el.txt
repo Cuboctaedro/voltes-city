@@ -1,0 +1,57 @@
+First-name: ΔΑΝΑΗ 8
+
+----
+
+Last-name: ΤΣΑΦΟΥ
+
+----
+
+Address: ΣΔΦΣ
+
+----
+
+City: ΣΦΣΔ
+
+----
+
+Phone: 6937437535
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 2
+
+----
+
+Children-names: ΣΔΦΣ
+
+----
+
+Client-message: ΣΔΦΣ
+
+----
+
+Booking-type: waiting
+
+----
+
+Booking-time: 2020-01-15 11:25
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

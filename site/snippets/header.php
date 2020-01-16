@@ -92,12 +92,12 @@
                         <ul class="flex flex-col xl:flex-row items-center shadow-xl xl:shadow-none">
 
                         <?php 
-                        if ($site->mainmenu()->exists() && $site->mainmenu()->isNotEmpty() ) {
+                      if ($site->mainmenu()->exists() && $site->mainmenu()->isNotEmpty() ) {
                             $menupages = $site->mainmenu()->toPages(); 
                         } else {
                             $menupages = $pages->listed();
                         } ?>
-                        <?php foreach($menupages->listed() as $item): ?>
+                        <?php foreach($menupages as $item): ?>
                             <li class="">
                                 <a class="<?php e($item->isOpen(), ' text-brand-200 ', ' text-white ') ?> block p-6 md:p-2 text-center  hover:text-brand-200 font-titles uppercase tracking-wide" href="<?= $item->url() ?>"><?= $item->title() ?></a>
                             </li>

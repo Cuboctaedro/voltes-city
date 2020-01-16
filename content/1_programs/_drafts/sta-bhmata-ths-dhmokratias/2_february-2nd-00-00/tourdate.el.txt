@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2020-02-02
+
+----
+
+Time: 12:00
+
+----
+
+Seats: 28
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

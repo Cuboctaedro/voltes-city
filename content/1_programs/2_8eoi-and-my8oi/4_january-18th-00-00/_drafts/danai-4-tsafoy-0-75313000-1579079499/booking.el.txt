@@ -1,0 +1,61 @@
+First-name: ΔΑΝΑΗ 4
+
+----
+
+Last-name: 
+
+Τσαφου
+
+----
+
+Address: Ψηλορείτη 97
+
+----
+
+City: 
+
+Γλυφάδα
+
+----
+
+Phone: 6937437535
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: ΕΤςΤ
+
+----
+
+Client-message: ςΕΡ
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2020-01-15 11:10
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

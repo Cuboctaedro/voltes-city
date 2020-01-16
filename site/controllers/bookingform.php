@@ -2,7 +2,9 @@
 
 use Uniform\Form;
 
-return function ($kirby, $pages, $page) {
+return function ($kirby, $pages, $page, $site) {
+    
+    $programspage = $site->find('programs');
 
 
     if ($page->parent()->programType() == 'children') {
@@ -114,17 +116,19 @@ return function ($kirby, $pages, $page) {
     
         $dateslug = explode('__', $bookingform->data('tourdate'))[0];
         $bookingtype = explode('__', $bookingform->data('tourdate'))[1];
-
-        $parent = kirby()->site()->pages()->find('programs')->childrenAndDrafts()->findBy('slug', $bookingform->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug);
         
+        $parent = $programspage->childrenAndDrafts()->findBy('slug', $bookingform->data('tourtitle'))->childrenAndDrafts()->findBy('dirname', $dateslug);
+
         if ( !$parent->acceptsRegistrations() ) {
 
             $bookingstatus = 'error';
-            kirby()->session()->set('booking', $bookingstatus);
+            // kirby()->session()->set('booking', $bookingstatus);
 
-            go('success');
+            // go('success');
 
-        } else {
+        } 
+        else 
+        {
             
             if ( $parent->bookingStatus() == 'waiting' ) {
                 $bookingstatus = 'waiting';
@@ -139,18 +143,15 @@ return function ($kirby, $pages, $page) {
             ->mailToTinaAction()
             ;
             
-            if ($bookingform->success()) {
-                kirby()->session()->set('booking', $$bookingstatus);
+            // if ($bookingform->success()) {
+            //     kirby()->session()->set('booking', $$bookingstatus);
 
-                go('success');
-            }
+            //     go('success');
+            // }
             
         }
-
-
-    
     }
-    
+
 
     if ( param('date') ) {
         $selected_date = urldecode(param('date'));
@@ -161,5 +162,5 @@ return function ($kirby, $pages, $page) {
     }
 
 
-    return compact('bookingform', 'selected_date');
+    return compact('bookingform', 'selected_date', 'bookingstatus');
 };

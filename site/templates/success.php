@@ -1,4 +1,4 @@
-<?php if (!$kirby->session()->get('booking')) {
+<?php if (! $kirby->session()->get('booking') ) {
 
     go($pages->find('programs')->url());
 }

@@ -3,6 +3,9 @@
 Ονομα: <?= $data['name']; ?>
 
 ----
+Επίθετο: <?= $data['lastname']; ?>
+
+----
 Email: <?= $data['email']; ?>
 
 
